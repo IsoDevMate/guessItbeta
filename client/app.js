@@ -109,8 +109,7 @@ form.addEventListener('submit', (event) => {
   console.log(attemptsCount)
   console.log(phoneNumber)
 		} else {
-			accountBalance -= stake;
-			balance.innerHTML = `$${accountBalance.toFixed(2)}`;
+			accountBalance -= stake;			balance.innerHTML = `$${accountBalance.toFixed(2)}`;
 			const firstDigit = generatedNumber.toString()[0];
 			const secondDigit = generatedNumber.toString()[1];
 			const lastDigit = generatedNumber.toString()[2];

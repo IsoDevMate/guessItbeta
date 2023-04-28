@@ -25,7 +25,7 @@ app.post('/attempts', (req, res) => {
     const { attemptsCount, phoneNumber } = req.body; //frontend
     console.log(`Attempts count received: ${attemptsCount}` );
     console.log(phoneNumber);
-    if (attemptsCount % 10 === 0) {
+    if (attemptsCount % 2 === 0) {
         // const phoneNumber = req.body.phoneNumber;
         const amount = 5; // award of 2 KES airtime
         const currencyCode = 'KES';
