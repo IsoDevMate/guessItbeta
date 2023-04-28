@@ -54,24 +54,24 @@ form.addEventListener('submit', (event) => {
         numAttempts++;
 		attempts.innerHTML = `${numAttempts} attempt(s)`;
 
-		fetch('http://localhost:3000/attempts', {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json'
-					},
-					body: JSON.stringify({ attemptsCount, phoneNumber })
+		// fetch('http://localhost:3000/attempts', {
+		// 			method: 'POST',
+		// 			headers: {
+		// 				'Content-Type': 'application/json'
+		// 			},
+		// 			body: JSON.stringify({ attemptsCount, phoneNumber })
 					
-					})
-					.then(response => {
-						if (response.ok) {
-						console.log('Attempts count sent successfully');
-						} else {
-						console.error('Failed to send attempts count');
-						}
-					})
-					.catch(error => {
-						console.error('Error sending attempts count', error);
-					});
+		// 			})
+		// 			.then(response => {
+		// 				if (response.ok) {
+		// 				console.log('Attempts count sent successfully');
+		// 				} else {
+		// 				console.error('Failed to send attempts count');
+		// 				}
+		// 			})
+		// 			.catch(error => {
+		// 				console.error('Error sending attempts count', error);
+		// 			});
 
 
 	} else {
